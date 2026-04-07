@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>LiftSpace</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="app">
+
+<header>
+
+<div class="logo">
+
+<div class="logoCircle"></div>
+
+<h2>LiftSpace</h2>
+
+</div>
+
+
+</header>
+
+
+<!-- HOME PAGE -->
+
+<div class="page active" id="home">
+
+<div class="grid">
+
+<div class="card green">
+
+<h3>Guided Breathing</h3>
+
+<p>Calm your mind with a breathing exercise.</p>
+
+</div>
+
+
+<div class="card orange">
+
+<h3>Calming Game</h3>
+
+<p>Pop bubbles to reduce stress.</p>
+
+</div>
+
+
+<div class="card blue">
+
+<h3>Community Messages</h3>
+
+<p>Share encouraging messages.</p>
+
+</div>
+
+
+<div class="card purple">
+
+<h3>Shared Music</h3>
+
+<p>Listen to relaxing playlists.</p>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- RELAX PAGE -->
+
+<div class="page" id="relax">
+
+<h2>Relaxation Tools</h2>
+
+<div class="tool">
+
+<h3>Guided Breathing</h3>
+
+<div class="breathingContainer">
+
+<div id="breathingCircle"></div>
+
+<p id="breathingText">Press Start</p>
+
+</div>
+
+<button onclick="startBreathing()">Start</button>
+
+</div>
+
+
+<div class="tool">
+
+<h3>Bubble Pop Game</h3>
+
+<p>Score: <span id="score">0</span></p>
+
+<button onclick="startGame()">Play</button>
+
+<div id="gameArea"></div>
+
+</div>
+
+</div>
+
+
+<!-- COMMUNITY PAGE -->
+
+<div class="page" id="community">
+
+<h2>Community Messages</h2>
+
+<input id="messageInput" placeholder="Write an encouraging message">
+
+<button onclick="sendMessage()">Send</button>
+
+<div id="messages"></div>
+
+</div>
+
+
+<!-- MUSIC PAGE -->
+
+<div class="page" id="music">
+
+<h2>Shared Music</h2>
+
+<p>Paste a Spotify track link</p>
+
+<input id="songInput" placeholder="Spotify track URL">
+
+<button onclick="addSong()">Add Song</button>
+
+<div id="songs"></div>
+
+</div>
+
+
+<!-- NAVIGATION -->
+
+<div class="navbar">
+
+<div onclick="showPage('home')">Home</div>
+
+<div onclick="showPage('relax')">Relax</div>
+
+<div onclick="showPage('community')">Community</div>
+
+<div onclick="showPage('music')">Music</div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
